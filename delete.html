@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/depense_revenu.css">
+        <title>SUPPRIMER DEPENSE</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" align="center">
+                <fieldset>
+                    <div class="title">
+                        <h3 align="center">Suppression DEPENSE</h3>
+                    </div>
+                    <div class="data-item">
+                        <label>TITRE</label>
+                        <input type="text" required name="titre" disabled
+                            autocomplete="off" id="titreDepense">
+                    </div>
+                    <div class="data-item">
+                        <label>MONTANT</label>
+                        <input type="number" required name="montant" disabled
+                            id="montantDepense">
+                    </div>
+                    <br>
+                    <a class="validerDepense" id="supprimerDepense"
+                        href="index.html">SUPPRIMER</a>
+                    <a class="validerDepense" style="background-color: grey;
+                        border-color: black;" href="index.html">ANNULER</a>
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            //RECUP DES DONNEES 
+            var depenseArray = JSON.parse(localStorage.getItem("tabDepense"));
+            var montantArray = JSON.parse(localStorage.getItem("tabMontant"));
+
+            //VARIABLES URL
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+
+            //BTN SUPPRESSION
+            var btnSupprimerDepense = document.getElementById("supprimerDepense");
+
+            //RECUP DE LA DEPENSE A SUPPRIMER
+            titreDepense = depenseArray[params.id];
+            montantDepense = montantArray[params.id];
+            document.getElementById("titreDepense").value = titreDepense;
+            document.getElementById("montantDepense").value = montantDepense;
+
+            //EVENEMENT
+            btnSupprimerDepense.onclick = function () {
+                depenseArray.splice(params.id, 1);
+                montantArray.splice(params.id, 1);
+                localStorage.setItem("tabDepense", JSON.stringify(depenseArray));
+                localStorage.setItem("tabMontant", JSON.stringify(montantArray));
+                alert("SUPPRIME AVEC SUCCES !!");
+            }
+        </script>
+    </body>
+</html>

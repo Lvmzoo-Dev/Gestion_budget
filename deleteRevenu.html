@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/depense_revenu.css">
+        <title>SUPPRIMER REVENU</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" align="center">
+                <fieldset>
+                    <div class="title">
+                        <h3 align="center">Suppression REVENU</h3>
+                    </div>
+                    <div class="data-item">
+                        <label>TITRE</label>
+                        <input type="text" required name="titre" disabled
+                            autocomplete="off" id="titreRevenu">
+                    </div>
+                    <div class="data-item">
+                        <label>MONTANT</label>
+                        <input type="number" required name="montant" disabled
+                            id="montantRevenu">
+                    </div>
+                    <br>
+                    <a class="validerDepense" id="supprimerRevenu"
+                        href="index.html">SUPPRIMER</a>
+                    <a class="validerDepense" style="background-color: grey;
+                        border-color: black;" href="index.html">ANNULER</a>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script src="javascript/deleteRevenu.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/delete.css">
+        <script src="https://kit.fontawesome.com/e5d2de2c0c.js"
+            crossorigin="anonymous"></script>
+        <title>Gestion De Budget</title>
+    </head>
+    <body>
+        <div class="container">
+            <fieldset>
+                <div class="title">
+                    <h3>Gestion de Budget</h3>
+                </div>
+                <div class="items">
+                    <div class="item-content">
+                        <label for="">Budget</label>
+                        <input type="text" name="" id="budgetLabel"
+                            value="" disabled>
+                    </div>
+                    <div class="item-content">
+                        <label for="">Dépense</label>
+                        <input type="text" name="" id="depenseLabel"
+                            value="" disabled>
+                    </div>
+                    <div class="item-content">
+                        <label for="">Solde</label>
+                        <input type="text" id="soldeLabel" name=""
+                            value="" disabled
+                            />
+                    </div>
+                </div>
+                <div class="texte-item">
+                    <span>Buget - Depense = solde</span>
+                </div>
+
+                <!-- REVENUS -->
+                <div class="revenus">
+                    <div class="texte">
+                        <span>Liste des revenus</span>
+                        <a href="revenu.html" class="btnAjoutRevenu">Ajouter
+                            Revenu &nbsp;<i class="fa-solid fa-circle-plus"></i></a>
+                        <!-- <button type="submit" name="ajoutRevenu">Ajouter Revenu</button> -->
+                    </div>
+                    <div class="table">
+                        <table border="3" align="center" cellpadding="15"
+                            id="tabRevenu">
+                            <tr>
+                                <td>TITRE</td>
+                                <td>MONTANT</td>
+                                <td>ACTIONS</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- DEPENSE -->
+                <div class="depense">
+                    <div class="texte">
+                        <span>Liste des dépenses</span>
+                        <a href="depense.html" class="btnAjoutDepense">Ajouter
+                            Dépense &nbsp;<i class="fa-solid fa-circle-plus"></i></a>
+                    </div>
+                    <div class="table">
+                        <table border="3" cellpadding="15"
+                            id="tabDepense">
+                            <tr>
+                                <td>TITRE</td>
+                                <td>MONTANT</td>
+                                <td>ACTIONS</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </body>
+    <script src="javascript/index.js"></script>
+
+</html>

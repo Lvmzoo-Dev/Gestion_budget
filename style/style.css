@@ -1,0 +1,155 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+}
+
+.container .items {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .items .item-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+}
+
+.container .items .item-content label {
+    font-weight: bold;
+}
+
+.container .items .item-content input {
+    width: 150px;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .texte-item {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+    line-height: 3em;
+}
+
+/* TABELAU DEPENSE */
+.container .depense {
+    margin-top: 80px;
+}
+
+.container .depense .texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .depense .texte span {
+    margin-right: 350px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .depense .texte a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 7px;
+    background-color: skyblue;
+    border-color: blue;
+    opacity: .9;
+}
+
+.container .depense .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.container .depense .table tr td {
+    column-width: 200px;
+}
+
+.container .depense .table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+/* TABLEAU REVENUS */
+.container .revenus {
+    margin-top: 80px;
+}
+
+.container .revenus .texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .revenus .texte span {
+    margin-right: 350px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .revenus .texte a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 7px;
+    background-color: skyblue;
+    border-color: blue;
+    opacity: .9;
+}
+
+.container .revenus .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.container .revenus .table tr td {
+    column-width: 200px;
+}
+
+.container .revenus .table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+/*********************************/
+#btnModifierRevenu,
+#btnModifierDepense {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    font-size: 15px;
+}
+
+#btnSupprimerRevenu,
+#btnSupprimerDepense {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 15px;
+}

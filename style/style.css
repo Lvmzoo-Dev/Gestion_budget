@@ -42,6 +42,18 @@ body {
     text-align: center;
 }
 
+/**TESTE**/
+
+.container .items .item-content span {
+    width: 150px;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/**FIN-TESTE**/
+
 .container .texte-item {
     display: flex;
     flex-direction: row-reverse;

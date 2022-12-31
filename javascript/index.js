@@ -1,3 +1,6 @@
+/************GESTION ICONE ************/
+var icone = document.getElementById("icone");
+icone.setAttribute('src', 'ressources/rouge.png');
 /************CRUD DEPENSE ************/
 
 var depenseArray = JSON.parse(localStorage.getItem("tabDepense"));
@@ -121,12 +124,13 @@ soldeLabel.value = Number(budgetLabel.value) - Number(depenseLabel.value);
 /******* SOLDE ******/
 
 var soldeColor = document.getElementById("soldeLabel");
-soldeColor.style.opacity = .9;
+// soldeColor.style.opacity = .9;
+var icone = document.getElementById("icone");
 if (soldeColor.value > 0) {
-    soldeColor.style.backgroundColor = "greenyellow";
+    icone.setAttribute('src', 'ressources/up.png');
 }
 else {
-    soldeColor.style.backgroundColor = "rosybrown";
+    icone.setAttribute('src', 'ressources/down.png');
 }
 
 
